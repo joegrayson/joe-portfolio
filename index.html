@@ -18,6 +18,11 @@
       rel="stylesheet"
     />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&family=Urbanist:wght@100;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
   </head>
@@ -32,12 +37,21 @@
         opacity: 5;
       }
 
+      .section-bg {
+        background-image: url("/src/assets/images/bg-boxes.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 100%;
+        opacity: 5;
+      }
+
       .custom-font-1 {
         font-family: "Raleway", sans-serif;
       }
 
       .custom-font-2 {
-        font-family: "Work Sans", sans-serif;
+        font-family: "Urbanist", sans-serif;
       }
     </style>
 
@@ -63,28 +77,28 @@
                 <ul class="flex items-center gap-6 text-sm">
                   <li>
                     <a
-                      class="px-1 py-1 text-sm font-semibold text-white transition-colors duration-300 transform hover:underline underline-offset-8 tracking-wider custom-font-1"
+                      class="px-1 py-1 text-sm font-light text-white transition-colors duration-300 transform hover:underline underline-offset-8 tracking-widest custom-font-1"
                       href="/"
                     >
-                      About
+                      about
                     </a>
                   </li>
 
                   <li>
                     <a
-                      class="py-1 text-sm font-semibold text-white transition-colors duration-300 transform hover:underline underline-offset-8 tracking-wider custom-font-1"
+                      class="py-1 text-sm font-light text-white transition-colors duration-300 transform hover:underline underline-offset-8 tracking-widest custom-font-1"
                       href="/"
                     >
-                      Work
+                      work
                     </a>
                   </li>
 
                   <li>
                     <a
-                      class="py-1 text-sm font-semibold text-white transition-colors duration-300 transform hover:underline underline-offset-8 tracking-wider custom-font-1"
+                      class="py-1 text-sm font-light text-white transition-colors duration-300 transform hover:underline underline-offset-8 tracking-widest custom-font-1"
                       href="/"
                     >
-                      Projects
+                      projects
                     </a>
                   </li>
                 </ul>
@@ -169,19 +183,23 @@
           </div>
 
           <div class="lg:py-24">
-            <h2 class="text-3xl font-medium sm:text-4xl mx-6 custom-font-2">
+            <h2
+              class="text-3xl font-medium sm:text-4xl mx-6 custom-font-2 tracking-wider"
+            >
               Hello, everyone!
             </h2>
 
             <p
-              class="mt-4 text-gray-600 font-medium tracking-wide text-lg mx-6 custom-font-2"
+              class="mt-4 text-gray-600 font-medium tracking-wider text-lg mx-6 custom-font-2"
             >
-              My name is Jonel, a recent graduate in Information Technology
-              passionate about art, music, and design. Pursuing a career in UI
-              design and front-end development, I create visually captivating
-              and user-friendly interfaces. I strive for exceptional design
-              solutions, continuously learning and improving to make a
-              meaningful impact in the digital realm.
+              My name is Jonel, a recent graduate from Cavite State University
+              with a degree in Information Technology. Passionate about the
+              intersection of art, music, and design, I'm pursuing a career as a
+              UI designer and front-end developer. With a meticulous eye for
+              detail, I strive to create visually captivating and user-friendly
+              interfaces. I'm dedicated to continuous learning and
+              self-improvement, and eager to make a meaningful impact in the
+              digital realm.
             </p>
           </div>
         </div>
@@ -189,5 +207,227 @@
     </section>
 
     <!-- End of Section -->
+
+    <!-- Footer -->
+
+    <footer class="bg-white lg:grid lg:grid-cols-5">
+      <div class="relative block h-32 lg:col-span-2 lg:h-full">
+        <img
+          src="/src/assets/images/bg-boxes.png"
+          alt=""
+          class="absolute inset-0 h-full w-full object-cover"
+        />
+      </div>
+
+      <div class="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
+        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+          <div>
+            <p>
+              <span class="text-xs uppercase tracking-wide text-gray-500">
+                Contact me
+              </span>
+
+              <a
+                class="block text-2xl font-medium text-gray-900 hover:opacity-75 sm:text-3xl"
+              >
+                0999-665-9449
+              </a>
+            </p>
+
+            <ul class="mt-8 space-y-1 text-lg text-gray-700">
+              <li>jonellunas@outlook.com</li>
+            </ul>
+
+            <ul class="mt-8 flex gap-6">
+              <li>
+                <a
+                  href="https://www.facebook.com/joelunas57"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-gray-700 transition hover:opacity-75"
+                >
+                  <span class="sr-only">Facebook</span>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    class="main-grid-item-icon"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.instagram.com/joelunas__"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-gray-700 transition hover:opacity-75"
+                >
+                  <span class="sr-only">Instagram</span>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    class="main-grid-item-icon"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <rect height="20" rx="5" ry="5" width="20" x="2" y="2" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-gray-700 transition hover:opacity-75"
+                >
+                  <span class="sr-only">LinkedIn</span>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    class="main-grid-item-icon"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                    />
+                    <rect height="12" width="4" x="2" y="9" />
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://github.com/joegrayson"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-gray-700 transition hover:opacity-75"
+                >
+                  <span class="sr-only">GitHub</span>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    class="main-grid-item-icon"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div>
+              <p class="font-medium text-gray-900">Services</p>
+
+              <ul class="mt-6 space-y-4 text-sm">
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75">
+                    1on1 Coaching
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75">
+                    Company Review
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75">
+                    Accounts Review
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75">
+                    HR Consulting
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75">
+                    SEO Optimisation
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <p class="font-medium text-gray-900">Company</p>
+
+              <ul class="mt-6 space-y-4 text-sm">
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75">
+                    About
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75">
+                    Meet the Team
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75">
+                    Accounts Review
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 border-t border-gray-100 pt-12">
+          <div class="sm:flex sm:items-center sm:justify-between">
+            <p class="mt-8 text-xs text-gray-500 sm:mt-0">
+              &copy; 2023. Jonel Lunas
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- End of Footer -->
   </body>
 </html>
