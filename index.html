@@ -57,6 +57,27 @@
       .custom-font-2 {
         font-family: "Urbanist", sans-serif;
       }
+
+      #backToTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        border: none;
+        border-radius: 50%;
+        background-color: #000;
+        color: #fff;
+        font-size: 0; /* Hide any text inside the button */
+        cursor: pointer;
+        opacity: 0.6;
+        transition: opacity 0.3s ease;
+      }
+
+      #backToTopBtn:hover {
+        opacity: 1;
+      }
     </style>
 
     <!-- New Header -->
@@ -844,8 +865,59 @@
         </div>
       </div>
     </footer>
-
     <!-- End of Footer -->
+
+    <button
+      onclick="backToTop()"
+      id="backToTopBtn"
+      class="fixed bottom-10 right-10 p-2 rounded-full flex items-center justify-center transition-colors focus:outline-none"
+      title="Back to Top"
+    >
+      <svg
+        class="w-6 h-6"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 10l7-7m0 0l7 7m-7-7v18"
+        />
+      </svg>
+    </button>
+
+    <!-- Back to Top Button -->
+    <script>
+      const backToTopBtn = document.getElementById("backToTopBtn");
+
+      const backToTop = () => {
+        document.body.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+
+        document.documentElement.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      };
+
+      const scrollFunction = () => {
+        if (window.scrollY > 20) {
+          backToTopBtn.style.display = "block";
+        } else {
+          backToTopBtn.style.display = "none";
+        }
+      };
+
+      window.addEventListener("scroll", scrollFunction);
+      backToTopBtn.addEventListener("click", backToTop);
+    </script>
+
+    <!-- Burger Menu Button -->
     <script>
       const menuToggle = document.getElementById("menu-toggle");
       menuToggle.addEventListener("click", () => {
