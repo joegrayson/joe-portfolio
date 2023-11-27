@@ -693,16 +693,29 @@
       backToTopBtn.addEventListener("click", backToTop);
     </script>
 
-    <!-- Burger Menu Button -->
+    <!-- Burger Menu Button and Link Click Handling -->
     <script>
       const menuToggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("menu");
+
       menuToggle.addEventListener("click", () => {
-        document.getElementById("menu").classList.toggle("hidden");
+        menu.classList.toggle("hidden");
       });
 
       const closeMenu = document.getElementById("close-menu");
       closeMenu.addEventListener("click", () => {
-        document.getElementById("menu").classList.toggle("hidden");
+        menu.classList.toggle("hidden");
+      });
+
+      // Get all menu links
+      const menuLinks = document.querySelectorAll("#menu a");
+
+      // Iterate through each link and add a click event listener
+      menuLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          // Hide the menu when a link is clicked
+          menu.classList.add("hidden");
+        });
       });
     </script>
 
