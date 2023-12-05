@@ -284,10 +284,10 @@
 
     <!-- End of About Section -->
 
-    <!-- Projects -->
+    <!-- Projects Carousel -->
 
     <section class="bg-gray-200 custom-font-2" id="projects">
-      <div class="container px-4 py-16 mx-auto space-y-8 lg:max-w-5xl">
+      <div class="container px-4 py-28 mx-auto space-y-8 lg:max-w-5xl">
         <h2 class="text-2xl font-bold md:text-4xl tracking-wider">Projects</h2>
         <!-- First Project Section -->
         <div class="flex w-full mb-20 flex-wrap">
@@ -308,50 +308,81 @@
           </p>
         </div>
 
-        <div class="flex flex-wrap md:-m-2 -m-1">
-          <div class="flex flex-wrap w-1/2">
-            <div class="md:p-2 p-1 w-1/2">
+        <div
+          id="carouselExampleSlidesOnly"
+          class="relative"
+          data-te-carousel-init
+          data-te-ride="carousel"
+        >
+          <!--Carousel items-->
+          <div
+            class="relative w-full overflow-hidden after:clear-both after:block after:content-['']"
+          >
+            <!--First item-->
+            <div
+              class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-item
+              data-te-carousel-active
+            >
               <img
-                alt="gallery"
-                class="w-full object-cover h-full object-center block transition duration-500 hover:scale-105"
                 src="/src/assets/images/gallery-1.jpg"
+                class="block w-full object-cover object-center h-full"
+                alt="home page"
               />
             </div>
-            <div class="md:p-2 p-1 w-1/2">
+            <!--Second item-->
+            <div
+              class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-item
+            >
               <img
-                alt="gallery"
-                class="w-full object-cover h-full object-center block transition duration-500 hover:scale-105"
-                src="/src/assets/images/gallery-4.jpg"
-              />
-            </div>
-            <div class="md:p-2 p-1 w-full">
-              <img
-                alt="gallery"
-                class="w-full h-full object-cover object-center block transition duration-500 hover:scale-105"
                 src="/src/assets/images/gallery-5.jpg"
+                class="block w-full object-cover object-center h-full"
+                alt="Camera"
               />
             </div>
-          </div>
-          <div class="flex flex-wrap w-1/2">
-            <div class="md:p-2 p-1 w-full">
+            <!--Third item-->
+            <div
+              class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-item
+            >
               <img
-                alt="gallery"
-                class="w-full h-full object-cover object-center block transition duration-500 hover:scale-105"
                 src="/src/assets/images/gallery-2.jpg"
+                class="block w-full object-cover object-center h-full"
+                alt="Exotic Fruits"
               />
             </div>
-            <div class="md:p-2 p-1 w-1/2">
+            <!--Fourth item-->
+            <div
+              class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-item
+            >
               <img
-                alt="gallery"
-                class="w-full object-cover h-full object-center block transition duration-500 hover:scale-105"
                 src="/src/assets/images/gallery-3.jpg"
+                class="block w-full object-cover object-center h-full"
+                alt="Exotic Fruits"
               />
             </div>
-            <div class="md:p-2 p-1 w-1/2">
+            <!--Fifth item-->
+            <div
+              class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-item
+            >
               <img
-                alt="gallery"
-                class="w-full object-cover h-full object-center block transition duration-500 hover:scale-105"
+                src="/src/assets/images/gallery-4.jpg"
+                class="block w-full object-cover object-center h-full"
+                alt="Exotic Fruits"
+              />
+            </div>
+            <!--Sixth item-->
+            <div
+              class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-item
+            >
+              <img
                 src="/src/assets/images/gallery-6.jpg"
+                class="block w-full object-cover object-center h-full"
+                alt="Exotic Fruits"
               />
             </div>
           </div>
@@ -379,50 +410,81 @@
           </p>
         </div>
 
-        <div class="flex flex-wrap md:-m-2 -m-1">
-          <div class="flex flex-wrap w-1/2">
-            <div class="md:p-2 p-1 w-1/2">
+        <div
+          id="carouselExampleSlidesOnly"
+          class="relative"
+          data-te-carousel-init
+          data-te-ride="carousel"
+        >
+          <!--Carousel items-->
+          <div
+            class="relative w-full overflow-hidden after:clear-both after:block after:content-['']"
+          >
+            <!--First item-->
+            <div
+              class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-item
+              data-te-carousel-active
+            >
               <img
-                alt="gallery"
-                class="w-full object-cover h-full object-center block transition duration-500 hover:scale-105"
-                src="/src/assets/images/solarich-3.jpg"
-              />
-            </div>
-            <div class="md:p-2 p-1 w-1/2">
-              <img
-                alt="gallery"
-                class="w-full object-cover h-full object-center block transition duration-500 hover:scale-105"
-                src="/src/assets/images/solarich-2.jpg"
-              />
-            </div>
-            <div class="md:p-2 p-1 w-full">
-              <img
-                alt="gallery"
-                class="w-full h-full object-cover object-center block transition duration-500 hover:scale-105"
                 src="/src/assets/images/solarich-1.jpg"
+                class="block w-full object-cover object-center h-full"
+                alt="home page"
               />
             </div>
-          </div>
-          <div class="flex flex-wrap w-1/2">
-            <div class="md:p-2 p-1 w-full">
+            <!--Second item-->
+            <div
+              class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-item
+            >
               <img
-                alt="gallery"
-                class="w-full h-full object-cover object-center block transition duration-500 hover:scale-105"
-                src="/src/assets/images/solarich-4.jpg"
-              />
-            </div>
-            <div class="md:p-2 p-1 w-1/2">
-              <img
-                alt="gallery"
-                class="w-full object-cover h-full object-center block transition duration-500 hover:scale-105"
                 src="/src/assets/images/solarich-5.jpg"
+                class="block w-full object-cover object-center h-full"
+                alt="Camera"
               />
             </div>
-            <div class="md:p-2 p-1 w-1/2">
+            <!--Third item-->
+            <div
+              class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-item
+            >
               <img
-                alt="gallery"
-                class="w-full object-cover h-full object-center block transition duration-500 hover:scale-105"
+                src="/src/assets/images/solarich-2.jpg"
+                class="block w-full object-cover object-center h-full"
+                alt="Exotic Fruits"
+              />
+            </div>
+            <!--Fourth item-->
+            <div
+              class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-item
+            >
+              <img
+                src="/src/assets/images/solarich-3.jpg"
+                class="block w-full object-cover object-center h-full"
+                alt="Exotic Fruits"
+              />
+            </div>
+            <!--Fifth item-->
+            <div
+              class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-item
+            >
+              <img
+                src="/src/assets/images/solarich-4.jpg"
+                class="block w-full object-cover object-center h-full"
+                alt="Exotic Fruits"
+              />
+            </div>
+            <!--Sixth item-->
+            <div
+              class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-item
+            >
+              <img
                 src="/src/assets/images/solarich-6.jpg"
+                class="block w-full object-cover object-center h-full"
+                alt="Exotic Fruits"
               />
             </div>
           </div>
@@ -430,7 +492,7 @@
       </div>
     </section>
 
-    <!-- End of Projects -->
+    <!-- End of Projects Carousel -->
 
     <!-- Footer -->
 
