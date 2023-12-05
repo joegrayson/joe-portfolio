@@ -720,31 +720,6 @@
       });
     </script>
 
-    <!-- <script>
-      const resumeButton = document.getElementById("resumeButton");
-
-      resumeButton.addEventListener("click", () => {
-        // Replace 'YOUR_SHAREABLE_LINK' with the actual link to your resume file
-        const downloadLink =
-          "https://1drv.ms/b/s!ApZ8uWae-SEHgSqtn2YPcGblG9c_?e=cOEbph";
-        const fileName = "JONEL_LUNAS_RESUME.pdf"; // Set the desired file name for download
-
-        fetch(downloadLink)
-          .then((response) => response.blob())
-          .then((blob) => {
-            const url = window.URL.createObjectURL(new Blob([blob]));
-            const a = document.createElement("a");
-            a.href = url;
-            a.download = fileName;
-            document.body.appendChild(a);
-            a.click();
-            window.URL.revokeObjectURL(url);
-            document.body.removeChild(a);
-          })
-          .catch((error) => console.error("Error:", error));
-      });
-    </script> -->
-
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
   </body>
 </html>
